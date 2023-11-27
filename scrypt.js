@@ -4,8 +4,8 @@ navbar.classList.add("navbar");
 let container = document.createElement("div");
 container.classList.add("con");
 
-let nestedDiv = document.createElement("div");
-nestedDiv.classList.add("ndiv");
+let navdiv = document.createElement("div");
+navdiv.classList.add("ndiv");
 
 let startBootstrapLink = document.createElement("a");
 startBootstrapLink.href = "#";
@@ -24,10 +24,10 @@ menuItems.forEach(itemText => {
     menuList.appendChild(listItem);
 });
 
-nestedDiv.appendChild(startBootstrapLink);
-nestedDiv.appendChild(menuList);
+navdiv.appendChild(startBootstrapLink);
+navdiv.appendChild(menuList);
 
-container.appendChild(nestedDiv);
+container.appendChild(navdiv);
 
 navbar.appendChild(container);
 
